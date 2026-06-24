@@ -1,0 +1,34 @@
+services:
+
+  database:
+    container_name: events-db-compose
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1
+      - MYSQL_DATABASE=events_db
+      - MYSQL_TCP_PORT=3306
+    expose:
+      - 3306
+    build: ./database
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  backend:
+    container_name: events-backend-compose
+    ports:
+      - 3000:3000
+    build: ./backend
+    depends_on:
+      database:
+        condition: service_healthy
+
+  frontend:
+    container_name: events-frontend-compose
+    ports:
+      - 8080:80
+    build: ./frontend
+    depends_on:
+      - backend

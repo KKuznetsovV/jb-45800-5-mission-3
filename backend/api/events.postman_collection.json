@@ -1,0 +1,502 @@
+{
+  "info": {
+    "_postman_id": "ecc1561e-320b-47c7-a8ec-bbdc3f1a1810",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53444870",
+    "_collection_link": "https://go.postman.co/collection/53444870-ecc1561e-320b-47c7-a8ec-bbdc3f1a1810?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET events/all",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "GET events/all",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/events/all",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "events",
+                "all"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "3614"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"e1e-CBMU7GOVYnyyAHsal/siCECJll8\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 08:25:39 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"code\": \"0fc9b685-0c99-4027-918b-b3ea1facc62a\",\n        \"eventTypeCode\": \"birthday\",\n        \"startDatetime\": \"2026-07-15T19:30:00.000Z\",\n        \"description\": \"Surprise birthday party for Alex and his best friends.\",\n        \"address\": \"789 Maple Avenue, Los Angeles, CA 90001\",\n        \"confirmedAttendees\": 45,\n        \"createdAt\": \"2026-06-24T07:40:56.000Z\",\n        \"updatedAt\": \"2026-06-24T07:42:15.000Z\",\n        \"eventType\": {\n            \"code\": \"birthday\",\n            \"name\": \"Birthday\",\n            \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n            \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n        }\n    },\n    {\n        \"code\": \"763ecab0-050a-4acb-a725-0539b3d6511f\",\n        \"eventTypeCode\": \"birthday\",\n        \"startDatetime\": \"2026-07-15T19:30:00.000Z\",\n        \"description\": \"Surprise birthday party for Sarah with family and close friends.\",\n        \"address\": \"789 Maple Avenue, Los Angeles, CA 90001\",\n        \"confirmedAttendees\": 45,\n        \"createdAt\": \"2026-06-24T07:41:34.000Z\",\n        \"updatedAt\": \"2026-06-24T07:41:34.000Z\",\n        \"eventType\": {\n            \"code\": \"birthday\",\n            \"name\": \"Birthday\",\n            \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n            \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n        }\n    },\n    {\n        \"code\": \"8c1bf412-6f9b-11f1-97d9-364a86aff69a\",\n        \"eventTypeCode\": \"wedding\",\n        \"startDatetime\": \"2026-07-24T07:08:48.000Z\",\n        \"description\": \"John and Jane wedding ceremony\",\n        \"address\": \"Tel Aviv, HaYarkon 5\",\n        \"confirmedAttendees\": 120,\n        \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n        \"updatedAt\": \"2026-06-24T07:08:48.000Z\",\n        \"eventType\": {\n            \"code\": \"wedding\",\n            \"name\": \"Wedding\",\n            \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n            \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n        }\n    },\n    {\n        \"code\": \"8c1bf5e4-6f9b-11f1-97d9-364a86aff69a\",\n        \"eventTypeCode\": \"conference\",\n        \"startDatetime\": \"2026-07-01T07:08:48.000Z\",\n        \"description\": \"Annual Tech Summit 2026\",\n        \"address\": \"Jerusalem Convention Center\",\n        \"confirmedAttendees\": 300,\n        \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n        \"updatedAt\": \"2026-06-24T07:08:48.000Z\",\n        \"eventType\": {\n            \"code\": \"conference\",\n            \"name\": \"Conference\",\n            \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n            \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n        }\n    },\n    {\n        \"code\": \"8c1bf648-6f9b-11f1-97d9-364a86aff69a\",\n        \"eventTypeCode\": \"party\",\n        \"startDatetime\": \"2026-06-14T07:08:48.000Z\",\n        \"description\": \"Summer beach party\",\n        \"address\": \"Herzliya Marina\",\n        \"confirmedAttendees\": 80,\n        \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n        \"updatedAt\": \"2026-06-24T07:08:48.000Z\",\n        \"eventType\": {\n            \"code\": \"party\",\n            \"name\": \"Party\",\n            \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n            \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n        }\n    },\n    {\n        \"code\": \"8c1bf687-6f9b-11f1-97d9-364a86aff69a\",\n        \"eventTypeCode\": \"birthday\",\n        \"startDatetime\": \"2026-07-08T07:08:48.000Z\",\n        \"description\": \"David 30th birthday celebration\",\n        \"address\": \"Ramat Gan, Bar St 12\",\n        \"confirmedAttendees\": 50,\n        \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n        \"updatedAt\": \"2026-06-24T07:08:48.000Z\",\n        \"eventType\": {\n            \"code\": \"birthday\",\n            \"name\": \"Birthday\",\n            \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n            \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n        }\n    },\n    {\n        \"code\": \"939634b5-f44b-4dad-962c-c984415679a8\",\n        \"eventTypeCode\": \"company_event\",\n        \"startDatetime\": \"2026-06-24T18:00:00.000Z\",\n        \"description\": \"Annual company celebration and networking event.\",\n        \"address\": \"123 Main Street, Suite 500, New York, NY 10001\",\n        \"confirmedAttendees\": 150,\n        \"createdAt\": \"2026-06-24T07:29:18.000Z\",\n        \"updatedAt\": \"2026-06-24T07:29:18.000Z\",\n        \"eventType\": {\n            \"code\": \"company_event\",\n            \"name\": \"Company Event\",\n            \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n            \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n        }\n    },\n    {\n        \"code\": \"9a5bd5af-0d0c-43ac-a0ff-60a79ed77da5\",\n        \"eventTypeCode\": \"birthday\",\n        \"startDatetime\": \"2026-07-15T19:30:00.000Z\",\n        \"description\": \"Surprise birthday party for Sarah with family and close friends.\",\n        \"address\": \"789 Maple Avenue, Los Angeles, CA 90001\",\n        \"confirmedAttendees\": 45,\n        \"createdAt\": \"2026-06-24T07:38:26.000Z\",\n        \"updatedAt\": \"2026-06-24T07:38:26.000Z\",\n        \"eventType\": {\n            \"code\": \"birthday\",\n            \"name\": \"Birthday\",\n            \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n            \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n        }\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "GET event-types",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "GET event-types",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/event-types",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "event-types"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "587"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"24b-BCNN4JD9E0SJsIAbCS5Tdk3aR+I\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 08:26:16 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"code\": \"birthday\",\n        \"name\": \"Birthday\",\n        \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n        \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n    },\n    {\n        \"code\": \"company_event\",\n        \"name\": \"Company Event\",\n        \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n        \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n    },\n    {\n        \"code\": \"conference\",\n        \"name\": \"Conference\",\n        \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n        \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n    },\n    {\n        \"code\": \"party\",\n        \"name\": \"Party\",\n        \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n        \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n    },\n    {\n        \"code\": \"wedding\",\n        \"name\": \"Wedding\",\n        \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n        \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "GET event-by-code",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "GET event-by-code",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/events/8c1bf412-6f9b-11f1-97d9-364a86aff69a",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "events",
+                "8c1bf412-6f9b-11f1-97d9-364a86aff69a"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "425"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1a9-F4Y2ZfEFs6gu7Bk4DMONruCnr68\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 08:26:46 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"code\": \"8c1bf412-6f9b-11f1-97d9-364a86aff69a\",\n    \"eventTypeCode\": \"wedding\",\n    \"startDatetime\": \"2026-07-24T07:08:48.000Z\",\n    \"description\": \"John and Jane wedding ceremony\",\n    \"address\": \"Tel Aviv, HaYarkon 5\",\n    \"confirmedAttendees\": 120,\n    \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n    \"updatedAt\": \"2026-06-24T07:08:48.000Z\",\n    \"eventType\": {\n        \"code\": \"wedding\",\n        \"name\": \"Wedding\",\n        \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n        \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "GET events?typeCode=wedding",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "GET events?typeCode=wedding",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/events?typeCode=wedding",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "events"
+              ],
+              "query": [
+                {
+                  "key": "typeCode",
+                  "value": "wedding"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "427"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1ab-YcGIv9Ygypvu7D1MShtkOIVoJkU\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 08:27:26 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"code\": \"8c1bf412-6f9b-11f1-97d9-364a86aff69a\",\n        \"eventTypeCode\": \"wedding\",\n        \"startDatetime\": \"2026-07-24T07:08:48.000Z\",\n        \"description\": \"John and Jane wedding ceremony\",\n        \"address\": \"Tel Aviv, HaYarkon 5\",\n        \"confirmedAttendees\": 120,\n        \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n        \"updatedAt\": \"2026-06-24T07:08:48.000Z\",\n        \"eventType\": {\n            \"code\": \"wedding\",\n            \"name\": \"Wedding\",\n            \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n            \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n        }\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "POST event",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "POST event",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"eventTypeCode\": \"birthday\",\r\n  \"startDatetime\": \"2026-07-15T19:30:00Z\",\r\n  \"description\": \"Surprise birthday party for Sarah with family and close friends.\",\r\n  \"address\": \"789 Maple Avenue, Los Angeles, CA 90001\",\r\n  \"confirmedAttendees\": 45\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/events/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "events",
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "480"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1e0-aL1/57dROxpjNF5XFcVNdp4iB+I\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 08:28:42 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"code\": \"e8ac86f6-22db-417d-86a4-1ff6dd41556c\",\n    \"eventTypeCode\": \"birthday\",\n    \"startDatetime\": \"2026-07-15T19:30:00.000Z\",\n    \"description\": \"Surprise birthday party for Sarah with family and close friends.\",\n    \"address\": \"789 Maple Avenue, Los Angeles, CA 90001\",\n    \"confirmedAttendees\": 45,\n    \"createdAt\": \"2026-06-24T08:28:42.000Z\",\n    \"updatedAt\": \"2026-06-24T08:28:42.000Z\",\n    \"eventType\": {\n        \"code\": \"birthday\",\n        \"name\": \"Birthday\",\n        \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n        \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "PUT event",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "PUT event",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"eventTypeCode\": \"birthday\",\r\n  \"startDatetime\": \"2026-07-15T19:30:00Z\",\r\n  \"description\": \"Surprise birthday party for Alex and his best friends.\",\r\n  \"address\": \"Azrieli\",\r\n  \"confirmedAttendees\": 45\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/events/e8ac86f6-22db-417d-86a4-1ff6dd41556c",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "events",
+                "e8ac86f6-22db-417d-86a4-1ff6dd41556c"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "438"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1b6-QBVws2mhqZgPGQpSmIolNWn/+Fw\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 08:30:07 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"code\": \"e8ac86f6-22db-417d-86a4-1ff6dd41556c\",\n    \"eventTypeCode\": \"birthday\",\n    \"startDatetime\": \"2026-07-15T19:30:00.000Z\",\n    \"description\": \"Surprise birthday party for Alex and his best friends.\",\n    \"address\": \"Azrieli\",\n    \"confirmedAttendees\": 45,\n    \"createdAt\": \"2026-06-24T08:28:42.000Z\",\n    \"updatedAt\": \"2026-06-24T08:30:07.000Z\",\n    \"eventType\": {\n        \"code\": \"birthday\",\n        \"name\": \"Birthday\",\n        \"createdAt\": \"2026-06-24T07:08:48.000Z\",\n        \"updatedAt\": \"2026-06-24T07:08:48.000Z\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "DELETE event",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "DELETE event",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/events/e8ac86f6-22db-417d-86a4-1ff6dd41556c",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "events",
+                "e8ac86f6-22db-417d-86a4-1ff6dd41556c"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "16"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"10-oV4hJxRVSENxc/wX8+mA4/Pe4tA\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 24 Jun 2026 08:30:54 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true\n}"
+        }
+      ]
+    }
+  ]
+}

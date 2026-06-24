@@ -1,0 +1,38 @@
+.about {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #e94560;
+    margin-bottom: 1.5rem;
+}
+
+.about-section {
+    background: #16213e;
+    border: 1px solid #0f3460;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    color: #ddd;
+}
+
+.about-section h3 {
+    color: #e94560;
+    margin-bottom: 0.8rem;
+}
+
+.about-section p,
+.about-section li {
+    line-height: 1.7;
+    color: #bbb;
+}
+
+.about-section ul {
+    padding-left: 1.4rem;
+}
+
+.about-section li {
+    margin-bottom: 0.4rem;
+}

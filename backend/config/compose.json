@@ -1,0 +1,12 @@
+{
+    "app": {
+        "name": "Events Manager Compose"
+    },
+    "db": {
+        "host": "database",
+        "port": 3306,
+        "username": "root",
+        "password": "",
+        "database": "events_db"
+    }
+}

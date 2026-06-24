@@ -1,0 +1,44 @@
+.app-header {
+  background-color: #1a1a2e;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex: none;
+}
+
+.app-logo {
+  height: 80px;
+  width: auto;
+  max-width: 320px;
+  display: block;
+  object-fit: contain;
+}
+
+.app-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.app-nav a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.app-nav a:hover {
+  color: #e94560;
+}
+
+.app-main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
